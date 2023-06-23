@@ -538,7 +538,7 @@ color: var(--LIGHT-FONT);
     position: absolute;
     top: 2950px;
     z-index: -1;
-    object-fit: contain;
+    background-repeat: no-repeat;
 }
 
 
@@ -698,7 +698,7 @@ color: var(--LIGHT-FONT);
     position: absolute;
     top: 4630px;
     z-index: -1;
-    object-fit: contain;
+    background-repeat: no-repeat;
 }
 
 
