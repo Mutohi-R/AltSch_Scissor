@@ -415,6 +415,8 @@ background: blue;
 
 .main__article-5 {
     margin: 172px auto 0;
+    display: grid;
+    place-content: center;
 }
 
 .article-5__sec1 p {
