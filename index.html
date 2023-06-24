@@ -9,33 +9,34 @@
 </head>
 
 <body>
-    <div class="body__div">
-        <header class="header">
-            <nav class="header__nav">
-                <div class="header__left">
-                    <img src="img/logo.svg" alt="logo">
-                    <img src="img/line.svg" alt="">
-                    <p>
-                    <h1 class="header__left-h1">SCISSOR</h1>
-                    </p>
-                </div>
-                <div class="header__mid">
-                    <ul class="header__ul">
-                        <li><a href="" class="url">My URLs</a></li>
-                        <li class="dropdown"><a href="#features">Features</a> <img src="img/dropdown.svg" alt=""></li>
-                        <li><a href="#pricing">Pricing</a></li>
-                        <li><a href="#analytics">Analytics</a></li>
-                        <li><a href="#faqs">FAQs</a></li>
-                    </ul>
-                </div>
-                <div class="header__right">
-                    <a href="" class="blueLink">Log in</a>
-                    <button>Try for free</button>
-                </div>
-            </nav>
-        </header>
 
-        <main class="main">
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__left">
+                <img src="img/logo.svg" alt="logo">
+                <img src="img/line.svg" alt="">
+                <p>
+                <h1 class="header__left-h1">SCISSOR</h1>
+                </p>
+            </div>
+            <div class="header__mid">
+                <ul class="header__ul">
+                    <li><a href="" class="url">My URLs</a></li>
+                    <li class="dropdown"><a href="#features">Features</a> <img src="img/dropdown.svg" alt=""></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#analytics">Analytics</a></li>
+                    <li><a href="#faqs">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="header__right">
+                <a href="" class="blueLink">Log in</a>
+                <button>Try for free</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="body__div">
             <article class="main__article-1">
                 <p class="article-1__p1">Optimize Your Online Experience with Our Advanced <span
                         class="article-1__span">URL Shortening</span> Solution <img src="img/underline.svg" alt=""
@@ -118,7 +119,7 @@
                 </div>
                 <div class="article-4__div2">
                     <div class="grid_cover">
-                        <div class="circle"><img src="img/link.png" alt=""></div>
+                        <div class="circle"><img src="img/link.svg" alt=""></div>
                         <h2>URL Shortening</h2>
                         <p>Scissor allows you to shorten URLs of your business, events. Shorten your URL at scale, URL
                             redirects.</p>
@@ -190,34 +191,40 @@
                         </ul>
                     </div>
                 </section>
+
                 <section class="article-5__sec3">
                     <button class="white-button">Get Custom Pricing</button>
                     <button>Select Pricing</button>
                 </section>
             </article>
-            <article class="main__article-6">
-                <div class="form">
-                    <form action="#" method="post" class="form-content">
-                        <p>
-                            <input type="text" placeholder="Paste URL here..." class="pasteURL">
+        </div>
+        <article class="main__article-6">
+            <div class="form">
+                <form action="#" method="post" class="form-content">
+                    <p>
+                        <input type="text" placeholder="Paste URL here..." class="pasteURL">
+                    </p>
+                    <div class="article-6__div2">
+                        <p><select name="domain" id="domain" class="domain">
+                                <option value="domain1" selected hidden>Select Domain</option>
+                                <option value="domain2">Public</option>
+                                <option value="domain3">Private</option>
+                                <option value="domain4">Hybrid</option>
+                            </select>
                         </p>
-                        <div class="article-6__div2">
-                            <p><select name="domain" id="domain" class="domain">
-                                    <option value="domain 1" selected hidden>Select Domain</option>
-                                </select>
-                            </p>
-                            <p>
-                                <input type="text" name="alias" id="alias" placeholder="Type alias here" class="alias">
-                            </p>
-                        </div>
-                        <p><button type="submit" class="article-6__btn">Trim URL <img src="img/wand.svg"
-                                    alt=""></button></p>
-                        <p class="condition">By clicking TrimURL, I agree to the <strong>Terms of Service, Privacy
-                                Policy</strong> and Use of Cookies.</p>
-                    </form>
+                        <p>
+                            <input type="text" name="alias" id="alias" placeholder="Type alias here" class="alias">
+                        </p>
+                    </div>
+                    <p><button type="submit" class="article-6__btn">Trim URL <img src="img/wand.svg" alt=""></button>
+                    </p>
+                    <p class="condition">By clicking TrimURL, I agree to the <strong><a href="">Terms of Service, Privacy
+                            Policy</a></strong> and Use of Cookies.</p>
+                </form>
 
-                </div>
-            </article>
+            </div>
+        </article>
+        <div class="body__div">
             <article class="main__article-7" id="faqs">
                 <section class="article-7__section">
                     <div class="faded"></div>
@@ -225,7 +232,7 @@
                 </section>
                 <ul id="accordion">
                     <li>
-                        <label for="first">How does URL shortening work? <img src="img/minus.svg" alt=""></label>
+                        <label for="first">How does URL shortening work? <span class="accordion_toggle"><img src="img/minus.svg" alt=""></span></label>
                         <input type="radio" name="accordion" id="first" checked>
                         <div class="content">
                             <p>
@@ -239,12 +246,13 @@
                     <hr>
 
                     <li>
-                        <label for="second">Is it necessary to create an account to use the URL shortening service? <img
-                                src="img/plus.svg" alt=""></label>
+                        <label for="second">Is it necessary to create an account to use the URL shortening service? <span class="accordion_toggle"><img
+                                src="img/plus.svg" alt=""></span></label>
                         <input type="radio" name="accordion" id="second">
                         <div class="content">
                             <p>
-
+                                URL shortening works by taking a long URL and creating a shorter, condensed version that
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis molestiae incidunt dolorum rem quam adipisci.
                             </p>
                         </div>
                     </li>
@@ -252,12 +260,12 @@
                     <hr>
 
                     <li>
-                        <label for="third">Are the shortened links permanent? Will they expire? <img src="img/plus.svg"
-                                alt=""></label>
+                        <label for="third">Are the shortened links permanent? Will they expire?<span class="accordion_toggle"><img
+                                src="img/plus.svg" alt=""></span></label>
                         <input type="radio" name="accordion" id="third">
                         <div class="content">
                             <p>
-
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta possimus deserunt velit, dolorem maiores amet expedita nulla necessitatibus?
                             </p>
                         </div>
                     </li>
@@ -265,12 +273,12 @@
                     <hr>
 
                     <li>
-                        <label for="fourth">Are there any limitations on the number of URLs I can shorten?<img
-                                src="img/plus.svg" alt=""></label>
+                        <label for="fourth">Are there any limitations on the number of URLs I can shorten?<span class="accordion_toggle"><img
+                                src="img/plus.svg" alt=""></span></label>
                         <input type="radio" name="accordion" id="fourth">
                         <div class="content">
                             <p>
-
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere magni ducimus, natus repellat dolorum eum ullam architecto harum soluta esse ea modi error quo repellendus!
                             </p>
                         </div>
                     </li>
@@ -278,12 +286,13 @@
                     <hr>
 
                     <li>
-                        <label for="fifth">Can I customize the shortened URLs to reflect my brand or content? <img
-                                src="img/plus.svg" alt=""></label>
+                        <label for="fifth">Can I customize the shortened URLs to reflect my brand or content<span class="accordion_toggle"><img
+                                src="img/plus.svg" alt=""></span></label>
                         <input type="radio" name="accordion" id="fifth">
                         <div class="content">
                             <p>
-
+                                
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint iusto distinctio amet velit incidunt itaque odio natus? Alias perspiciatis architecto blanditiis aspernatur dolorem inventore dolorum enim optio minima?
                             </p>
                         </div>
                     </li>
@@ -291,12 +300,12 @@
                     <hr>
 
                     <li>
-                        <label for="sixth">Can I track the performance of my shortened URLs? <img src="img/plus.svg"
-                                alt=""></label>
+                        <label for="sixth">Can I track the performance of my shortened URLs<span class="accordion_toggle"><img
+                                src="img/plus.svg" alt=""></span></label>
                         <input type="radio" name="accordion" id="sixth">
                         <div class="content">
                             <p>
-
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, quidem nesciunt? Facere at cumque laudantium, animi a suscipit minima. Voluptas molestias aliquid in facilis sit.
                             </p>
                         </div>
                     </li>
@@ -305,11 +314,12 @@
 
                     <li>
                         <label for="seventh">How secure is the URL shortening service? Are the shortened links protected
-                            against spam or malicious activity? <img src="img/plus.svg" alt=""></label>
+                            against spam or malicious activity? <span class="accordion_toggle"><img
+                                src="img/plus.svg" alt=""></span></label>
                         <input type="radio" name="accordion" id="seventh">
                         <div class="content">
                             <p>
-
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quae veritatis fugiat eligendi fuga velit deserunt at saepe voluptate laudantium.
                             </p>
                         </div>
                     </li>
@@ -317,11 +327,12 @@
                     <hr>
 
                     <li>
-                        <label for="eight">What is a QR code and what can it do? <img src="img/plus.svg" alt=""></label>
+                        <label for="eight">What is a QR code and what can it do? <span class="accordion_toggle"><img
+                                src="img/plus.svg" alt=""></span></label>
                         <input type="radio" name="accordion" id="eight">
                         <div class="content">
                             <p>
-
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem incidunt iure vel odit. Deserunt sit facere recusandae, dolore iusto eum voluptatibus deleniti atque sapiente excepturi dignissimos obcaecati.
                             </p>
                         </div>
                     </li>
@@ -330,24 +341,28 @@
 
                     <li>
                         <label for="ninth">Is there an API available for integrating the URL shortening service into my
-                            own applications or websites? <img src="img/plus.svg" alt=""></label>
+                            own applications or websites? <span class="accordion_toggle"><img
+                                src="img/plus.svg" alt=""></span></label>
                         <input type="radio" name="accordion" id="ninth">
                         <div class="content">
                             <p>
-
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ea eum fugiat error in eius. Assumenda aliquid, veritatis aliquam rem ut dolor cum incidunt eos odit nam optio, obcaecati voluptatibus.
                             </p>
                         </div>
                     </li>
                 </ul>
             </article>
-            <article class="main__article-8">
-                <div class="article-8__div">
-                    <h2>Revolutionizing Link Optimization</h2>
-                    <button>Get started</button>
-                </div>
-            </article>
-        </main>
-        <footer class="footer">
+        </div>
+        <article class="main__article-8">
+            <div class="article-8__div">
+                <h2>Revolutionizing Link Optimization</h2>
+                <button>Get started</button>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="body__div">
             <section class="footer__mainsec">
                 <section class="footer__sec1">
                     <div class="footer__logo">
@@ -356,10 +371,10 @@
                         <h2>SCISSOR</h2>
                     </div>
                     <div class="footer__logo2">
-                        <img src="img/twitter.svg" alt="">
-                        <img src="img/instagram.svg" alt="">
-                        <img src="img/linkedIn.svg" alt="">
-                        <img src="img/facebook.svg" alt="">
+                        <a href=""><img src="img/twitter.svg" alt="" class="twitter"></a>
+                        <a href=""><img src="img/instagram.svg" alt=""></a>
+                        <a href=""><img src="img/linkedIn.svg" alt=""></a>
+                        <a href=""><img src="img/facebook.svg" alt=""></a>
                     </div>
                 </section>
                 <section class="footer__sec2">
@@ -441,17 +456,32 @@
                     </div>
                 </section>
             </section>
-        </footer>
-    </div>
-    <section class="web-label">
-        <p>Terms of Servive</p>
-        <img src="img/footer_line.svg" alt="">
-        <p>Security</p>
-        <img src="img/footer_line.svg" alt="">
-        <p>Scissor 2023</p>
-    </section>
-    <div class="background"></div>
-    <div class="background2"></div>
+        </div>
+        <section class="web-label">
+            <p>Terms of Servive</p>
+            <img src="img/footer_line.svg" alt="">
+            <p>Security</p>
+            <img src="img/footer_line.svg" alt="">
+            <p>Scissor 2023</p>
+        </section>
+    </footer>
+    <script>
+        var accordionRadios = document.getElementsByName("accordion");
+        var accordionButtons = document.getElementsByClassName("accordion_toggle");
+        for(var i = 0; i < accordionRadios.length; i++) {
+            // console.log(accordionRadios[i]);
+            accordionRadios[i].addEventListener("click", toggleAccordionImg);
+        }
+        function toggleAccordionImg(){
+            for(var i = 0; i < accordionRadios.length; i++) {
+                //  console.log(i, accordionRadios[i].checked);
+                 if(accordionRadios[i].checked)
+                    accordionButtons[i].innerHTML = '<img src="img/minus.svg" alt="">';
+                else
+                    accordionButtons[i].innerHTML = '<img src="img/plus.svg" alt="">';
+            }
+        }
+    </script>
 </body>
 
 </html>
