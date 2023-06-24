@@ -304,7 +304,7 @@ background: blue;
 
 .trapezoid {
     background-image: linear-gradient(#e2e9f0b3 10.68%, rgba(220, 228, 235, 0.7) 44.01%, rgba(226, 233, 240, 0) 100%);
-    border-bottom: 100px solid #e2e9f079;
+    border-bottom: 100px solid #e5eaee3a;
     border-left: 120px solid transparent;
     border-right: 120px solid transparent;
     height: auto;
