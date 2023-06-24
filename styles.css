@@ -302,8 +302,21 @@ background: blue;
         -7px -7px 11px #fafeff;
 }
 
+.trapezoid {
+    background-image: linear-gradient(#e2e9f0b3 10.68%, rgba(220, 228, 235, 0.7) 44.01%, rgba(226, 233, 240, 0) 100%);
+    border-bottom: 100px solid #e2e9f079;
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    height: auto;
+    position: absolute;
+    top: -30px;
+    width: 100%;
+  }
+
 .lake {
+    width: 100%;
     margin-top: 60px;
+    position: relative;
 }
 
 .main__article-3 {
