@@ -791,12 +791,22 @@ background: blue;
     gap: 24px;
 }
 
+.footer__logo2 a img:hover {
+    transform: translateY(-20%);
+    transition: transform 0.5s;
+}
+
 .sec__div {
     display: flex;
     flex-direction: column;
     gap: 8px;
     align-items: flex-start;
     padding: 0px 24px;
+}
+
+.sec__div a:hover {
+    color: #0e5ba8;
+    cursor: pointer;
 }
 
 .footer h4 {
